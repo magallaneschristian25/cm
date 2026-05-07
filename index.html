@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-card {
+      background: #fff;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      padding: 40px 20px 60px;
+      position: relative;
+    }
+
+    .header h2 {
+      color: white;
+      letter-spacing: 1px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid white;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -60px;
+      object-fit: cover;
+      background: #ccc;
+    }
+
+    .content {
+      padding: 80px 20px 30px;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      color: #555;
+      margin: 8px 0;
+      font-size: 15px;
+    }
+
+    .info span {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .profile-card {
+        max-width: 500px;
+      }
+
+      .name {
+        font-size: 26px;
+      }
+
+      .info {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <div class="header">
+      <h2>My Profile</h2>
+      <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+    </div>
+
+    <div class="content">
+      <div class="name">Christian Magallanes</div>
+
+      <div class="info"><span>Birthday:</span> May 6, 2002</div>
+      <div class="info"><span>Address:</span> Brgy. Oringao, Kabankalan City</div>
+
+      <a href="#" class="btn">Follow</a>
+    </div>
+  </div>
+
+</body>
+</html>
