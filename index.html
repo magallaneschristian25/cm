@@ -17,7 +17,7 @@
     }
 
     body {
-      background: linear-gradient(135deg, #667eea, #764ba2);
+      background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
       min-height: 100vh;
     }
 
@@ -28,25 +28,26 @@
       left: 0;
       width: 100%;
       height: 70px;
-      background: rgba(255,255,255,0.15);
-      backdrop-filter: blur(10px);
+      background: rgba(15,23,42,0.85);
+      backdrop-filter: blur(12px);
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0 25px;
       z-index: 1000;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
 
     .logo {
-      color: white;
+      color: #f8fafc;
       font-size: 24px;
       font-weight: bold;
       letter-spacing: 1px;
     }
 
     .header-icons i {
-      color: white;
+      color: #f8fafc;
       font-size: 22px;
       margin-left: 15px;
       cursor: pointer;
@@ -55,7 +56,7 @@
 
     .header-icons i:hover {
       transform: scale(1.1);
-      color: #ffe082;
+      color: #38bdf8;
     }
 
     /* SIDEBAR */
@@ -65,10 +66,11 @@
       left: 0;
       width: 240px;
       height: 100%;
-      background: rgba(255,255,255,0.15);
-      backdrop-filter: blur(10px);
+      background: rgba(15,23,42,0.85);
+      backdrop-filter: blur(12px);
       padding-top: 20px;
-      box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+      box-shadow: 4px 0 15px rgba(0,0,0,0.3);
+      border-right: 1px solid rgba(255,255,255,0.08);
     }
 
     .sidebar ul {
@@ -81,13 +83,13 @@
     }
 
     .sidebar ul li:hover {
-      background: rgba(255,255,255,0.2);
-      border-left: 4px solid white;
+      background: rgba(56,189,248,0.15);
+      border-left: 4px solid #38bdf8;
     }
 
     .sidebar ul li a {
       text-decoration: none;
-      color: white;
+      color: #f1f5f9;
       display: flex;
       align-items: center;
       gap: 12px;
@@ -106,18 +108,18 @@
     }
 
     .profile-card {
-      background: #fff;
+      background: #ffffff;
       width: 90%;
       max-width: 400px;
-      border-radius: 20px;
+      border-radius: 24px;
       overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.35);
       text-align: center;
       animation: fadeIn 1s ease;
     }
 
     .header {
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      background: linear-gradient(135deg, #0ea5e9, #2563eb);
       padding: 40px 20px 60px;
       position: relative;
     }
@@ -125,6 +127,7 @@
     .header h2 {
       color: white;
       letter-spacing: 1px;
+      font-size: 28px;
     }
 
     .profile-img {
@@ -138,6 +141,7 @@
       bottom: -60px;
       object-fit: cover;
       background: #ccc;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
     }
 
     .content {
@@ -145,46 +149,51 @@
     }
 
     .name {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: bold;
       margin-bottom: 10px;
+      color: #0f172a;
     }
 
     .info {
-      color: #555;
-      margin: 8px 0;
+      color: #475569;
+      margin: 10px 0;
       font-size: 15px;
     }
 
     .info span {
       font-weight: bold;
-      color: #333;
+      color: #0f172a;
     }
 
     .btn {
       margin-top: 20px;
       display: inline-block;
-      padding: 10px 20px;
-      border-radius: 25px;
-      background: linear-gradient(135deg, #667eea, #764ba2);
+      padding: 12px 24px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #0ea5e9, #2563eb);
       color: white;
       text-decoration: none;
       transition: 0.3s;
+      font-weight: 600;
+      box-shadow: 0 6px 15px rgba(37,99,235,0.3);
     }
 
     .btn:hover {
-      opacity: 0.8;
+      transform: translateY(-2px);
+      opacity: 0.9;
     }
 
     /* FOOTER */
     footer {
       margin-left: 240px;
-      background: rgba(255,255,255,0.15);
-      backdrop-filter: blur(10px);
-      color: white;
+      background: rgba(15,23,42,0.85);
+      backdrop-filter: blur(12px);
+      color: #f8fafc;
       text-align: center;
       padding: 15px;
       font-size: 14px;
+      border-top: 1px solid rgba(255,255,255,0.08);
     }
 
     /* ANIMATION */
